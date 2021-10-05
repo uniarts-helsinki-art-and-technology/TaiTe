@@ -10,39 +10,58 @@ dependencies:
   # main libraries
   - python>=3.9
   - anaconda
-    # python helper libs
+
+  # python helper libs
   - six # smoothing over the differences between the Python 2 & 3 versions with the goal of writing Python code that is compatible on both Python versions
+
   # image processing
   - pillow #  Python Imaging Library for opening, manipulating, and saving many different image file formats
   - scikit-image # algorithms for segmentation, geometric transformations, color space manipulation, analysis, filtering, morphology, feature detection
   - colour-science # algorithms and datasets for colour science
-  - numpy # multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions
   - graphicsmagick # swiss army knife of image processing
   - cairo # 2D graphics library with support for multiple output devices
   - imageio # an easy interface to read and write a wide range of image data
+
   # Computer vision
   - mahotas #  Computer Vision Library
   - opencv # Computer vision and machine learning
+
   # Machine learning
   - dlib # real world machine learning and data analysis
+
   # math, science, engineering
-  - matplotlib # datavisuals
-  - scipy # mathematics, science, and engineering
+  - numpy #  for handling multi-dimensional arrays and matrices, a large collection of high-level mathematical functions
+  - matplotlib # most common low-level visualization library, datavisuals | https://matplotlib.org/
+  - scipy # mathematics, science, and engineering | https://docs.scipy.org/doc/scipy/reference/index.html
+
   # audio
   - pyaudio #  play and record audio on a variety of platforms
+
+  # GUI (which one to choose?) | https://wiki.python.org/moin/GuiProgramming
+  #- PyQt vs. PyQt5 vs. PyQt6
+  # pyside6 (PIP)
+  # WxPython
+  # Python GTK+ 3
+  # dearpygui
+
   # installers
   - pip # tool for installing Python packages
   - pip:
     # works for regular pip packages and for wheels
+
     # image processing
     - colour-science # algorithms and datasets for colour science
+
     # Computer vision
     - openpifpaf # image-based human body pose estimation
+
     # sound
     # math, science, engineering
+
     # file formats
     - tifffile
     - pypng
+
     # terminal
     - decorator
     # python helper
